@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <title>Simple Minesweeper Game</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="custom-input">
+        <label class="label" for="size">Enter Rows</label>
+        <input class="add" type="text" id="rows" name="rows" value="10" />
+        <label class="label" for="size">Enter Columns</label>
+        <input
+          type="text"
+          class="add col"
+          id="columns"
+          name="columns"
+          value="10"
+        />
+        <label class="label" for="mines">Max no. of Mines</label>
+        <input type="text" class="add col" id="mines" name="mines" value="25" />
+        <button class="btn" onclick="createGrid()">Create Grid</button>
+      </div>
+      <div class="mineSweeperGrid"></div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
